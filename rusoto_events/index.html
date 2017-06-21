@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `rusoto_events` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, rusoto_events">
+
+    <title>rusoto_events - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate rusoto_events</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'rusoto_events', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>rusoto_events</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/rusoto_events/lib.rs.html#2-17' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon CloudWatch Events</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.CloudWatchEventsClient.html">CloudWatchEventsClient</a> and <a href="trait.CloudWatchEvents.html">CloudWatchEvents</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CloudWatchEventsClient.html"
+                                  title='struct rusoto_events::CloudWatchEventsClient'>CloudWatchEventsClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon CloudWatch Events API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteRuleRequest.html"
+                                  title='struct rusoto_events::DeleteRuleRequest'>DeleteRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeRuleRequest.html"
+                                  title='struct rusoto_events::DescribeRuleRequest'>DescribeRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeRuleResponse.html"
+                                  title='struct rusoto_events::DescribeRuleResponse'>DescribeRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DisableRuleRequest.html"
+                                  title='struct rusoto_events::DisableRuleRequest'>DisableRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EcsParameters.html"
+                                  title='struct rusoto_events::EcsParameters'>EcsParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>The custom parameters to be used when the target is an Amazon ECS cluster.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EnableRuleRequest.html"
+                                  title='struct rusoto_events::EnableRuleRequest'>EnableRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.InputTransformer.html"
+                                  title='struct rusoto_events::InputTransformer'>InputTransformer</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains the parameters needed for you to provide custom input to a target based on one or more pieces of data extracted from the event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.KinesisParameters.html"
+                                  title='struct rusoto_events::KinesisParameters'>KinesisParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>This object enables you to specify a JSON path to extract from the event and use as the partition key for the Amazon Kinesis stream, so that you can control the shard to which the event goes. If you do not include this parameter, the default is to use the <code>eventId</code> as the partition key.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListRuleNamesByTargetRequest.html"
+                                  title='struct rusoto_events::ListRuleNamesByTargetRequest'>ListRuleNamesByTargetRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListRuleNamesByTargetResponse.html"
+                                  title='struct rusoto_events::ListRuleNamesByTargetResponse'>ListRuleNamesByTargetResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListRulesRequest.html"
+                                  title='struct rusoto_events::ListRulesRequest'>ListRulesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListRulesResponse.html"
+                                  title='struct rusoto_events::ListRulesResponse'>ListRulesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListTargetsByRuleRequest.html"
+                                  title='struct rusoto_events::ListTargetsByRuleRequest'>ListTargetsByRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListTargetsByRuleResponse.html"
+                                  title='struct rusoto_events::ListTargetsByRuleResponse'>ListTargetsByRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutEventsRequest.html"
+                                  title='struct rusoto_events::PutEventsRequest'>PutEventsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutEventsRequestEntry.html"
+                                  title='struct rusoto_events::PutEventsRequestEntry'>PutEventsRequestEntry</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an event to be submitted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutEventsResponse.html"
+                                  title='struct rusoto_events::PutEventsResponse'>PutEventsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutEventsResultEntry.html"
+                                  title='struct rusoto_events::PutEventsResultEntry'>PutEventsResultEntry</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents an event that failed to be submitted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutRuleRequest.html"
+                                  title='struct rusoto_events::PutRuleRequest'>PutRuleRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutRuleResponse.html"
+                                  title='struct rusoto_events::PutRuleResponse'>PutRuleResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutTargetsRequest.html"
+                                  title='struct rusoto_events::PutTargetsRequest'>PutTargetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutTargetsResponse.html"
+                                  title='struct rusoto_events::PutTargetsResponse'>PutTargetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutTargetsResultEntry.html"
+                                  title='struct rusoto_events::PutTargetsResultEntry'>PutTargetsResultEntry</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a target that failed to be added to a rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RemoveTargetsRequest.html"
+                                  title='struct rusoto_events::RemoveTargetsRequest'>RemoveTargetsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RemoveTargetsResponse.html"
+                                  title='struct rusoto_events::RemoveTargetsResponse'>RemoveTargetsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RemoveTargetsResultEntry.html"
+                                  title='struct rusoto_events::RemoveTargetsResultEntry'>RemoveTargetsResultEntry</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents a target that failed to be removed from a rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Rule.html"
+                                  title='struct rusoto_events::Rule'>Rule</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains information about a rule in Amazon CloudWatch Events.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RunCommandParameters.html"
+                                  title='struct rusoto_events::RunCommandParameters'>RunCommandParameters</a></td>
+                           <td class='docblock-short'>
+                                <p>This parameter contains the criteria (either InstanceIds or a tag) used to specify which EC2 instances are to be sent the command. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RunCommandTarget.html"
+                                  title='struct rusoto_events::RunCommandTarget'>RunCommandTarget</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about the EC2 instances that are to be sent the command, specified as key-value pairs. Each <code>RunCommandTarget</code> block can include only one key, but this key may specify multiple values.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Target.html"
+                                  title='struct rusoto_events::Target'>Target</a></td>
+                           <td class='docblock-short'>
+                                <p>Targets are the resources to be invoked when a rule is triggered. Target types include EC2 instances, AWS Lambda functions, Amazon Kinesis streams, Amazon ECS tasks, AWS Step Functions state machines, Run Command, and built-in targets.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TestEventPatternRequest.html"
+                                  title='struct rusoto_events::TestEventPatternRequest'>TestEventPatternRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TestEventPatternResponse.html"
+                                  title='struct rusoto_events::TestEventPatternResponse'>TestEventPatternResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteRuleError.html"
+                                  title='enum rusoto_events::DeleteRuleError'>DeleteRuleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteRule</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeRuleError.html"
+                                  title='enum rusoto_events::DescribeRuleError'>DescribeRuleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeRule</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DisableRuleError.html"
+                                  title='enum rusoto_events::DisableRuleError'>DisableRuleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DisableRule</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.EnableRuleError.html"
+                                  title='enum rusoto_events::EnableRuleError'>EnableRuleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by EnableRule</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListRuleNamesByTargetError.html"
+                                  title='enum rusoto_events::ListRuleNamesByTargetError'>ListRuleNamesByTargetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListRuleNamesByTarget</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListRulesError.html"
+                                  title='enum rusoto_events::ListRulesError'>ListRulesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListRules</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListTargetsByRuleError.html"
+                                  title='enum rusoto_events::ListTargetsByRuleError'>ListTargetsByRuleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListTargetsByRule</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.PutEventsError.html"
+                                  title='enum rusoto_events::PutEventsError'>PutEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PutEvents</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.PutRuleError.html"
+                                  title='enum rusoto_events::PutRuleError'>PutRuleError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PutRule</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.PutTargetsError.html"
+                                  title='enum rusoto_events::PutTargetsError'>PutTargetsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PutTargets</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.RemoveTargetsError.html"
+                                  title='enum rusoto_events::RemoveTargetsError'>RemoveTargetsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RemoveTargets</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.TestEventPatternError.html"
+                                  title='enum rusoto_events::TestEventPatternError'>TestEventPatternError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by TestEventPattern</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.CloudWatchEvents.html"
+                                  title='trait rusoto_events::CloudWatchEvents'>CloudWatchEvents</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait representing the capabilities of the Amazon CloudWatch Events API. Amazon CloudWatch Events clients implement this trait.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Arn.html"
+                                  title='type rusoto_events::Arn'>Arn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Boolean.html"
+                                  title='type rusoto_events::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ErrorCode.html"
+                                  title='type rusoto_events::ErrorCode'>ErrorCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ErrorMessage.html"
+                                  title='type rusoto_events::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventId.html"
+                                  title='type rusoto_events::EventId'>EventId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventPattern.html"
+                                  title='type rusoto_events::EventPattern'>EventPattern</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventResource.html"
+                                  title='type rusoto_events::EventResource'>EventResource</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventResourceList.html"
+                                  title='type rusoto_events::EventResourceList'>EventResourceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventTime.html"
+                                  title='type rusoto_events::EventTime'>EventTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.InputTransformerPathKey.html"
+                                  title='type rusoto_events::InputTransformerPathKey'>InputTransformerPathKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Integer.html"
+                                  title='type rusoto_events::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LimitMax100.html"
+                                  title='type rusoto_events::LimitMax100'>LimitMax100</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LimitMin1.html"
+                                  title='type rusoto_events::LimitMin1'>LimitMin1</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NextToken.html"
+                                  title='type rusoto_events::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PutEventsRequestEntryList.html"
+                                  title='type rusoto_events::PutEventsRequestEntryList'>PutEventsRequestEntryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PutEventsResultEntryList.html"
+                                  title='type rusoto_events::PutEventsResultEntryList'>PutEventsResultEntryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PutTargetsResultEntryList.html"
+                                  title='type rusoto_events::PutTargetsResultEntryList'>PutTargetsResultEntryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RemoveTargetsResultEntryList.html"
+                                  title='type rusoto_events::RemoveTargetsResultEntryList'>RemoveTargetsResultEntryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RoleArn.html"
+                                  title='type rusoto_events::RoleArn'>RoleArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RuleArn.html"
+                                  title='type rusoto_events::RuleArn'>RuleArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RuleDescription.html"
+                                  title='type rusoto_events::RuleDescription'>RuleDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RuleName.html"
+                                  title='type rusoto_events::RuleName'>RuleName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RuleNameList.html"
+                                  title='type rusoto_events::RuleNameList'>RuleNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RuleResponseList.html"
+                                  title='type rusoto_events::RuleResponseList'>RuleResponseList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RuleState.html"
+                                  title='type rusoto_events::RuleState'>RuleState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RunCommandTargetKey.html"
+                                  title='type rusoto_events::RunCommandTargetKey'>RunCommandTargetKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RunCommandTargetValue.html"
+                                  title='type rusoto_events::RunCommandTargetValue'>RunCommandTargetValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RunCommandTargetValues.html"
+                                  title='type rusoto_events::RunCommandTargetValues'>RunCommandTargetValues</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RunCommandTargets.html"
+                                  title='type rusoto_events::RunCommandTargets'>RunCommandTargets</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ScheduleExpression.html"
+                                  title='type rusoto_events::ScheduleExpression'>ScheduleExpression</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetArn.html"
+                                  title='type rusoto_events::TargetArn'>TargetArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetId.html"
+                                  title='type rusoto_events::TargetId'>TargetId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetIdList.html"
+                                  title='type rusoto_events::TargetIdList'>TargetIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetInput.html"
+                                  title='type rusoto_events::TargetInput'>TargetInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetInputPath.html"
+                                  title='type rusoto_events::TargetInputPath'>TargetInputPath</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetList.html"
+                                  title='type rusoto_events::TargetList'>TargetList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TargetPartitionKeyPath.html"
+                                  title='type rusoto_events::TargetPartitionKeyPath'>TargetPartitionKeyPath</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TransformerInput.html"
+                                  title='type rusoto_events::TransformerInput'>TransformerInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TransformerPaths.html"
+                                  title='type rusoto_events::TransformerPaths'>TransformerPaths</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "rusoto_events";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

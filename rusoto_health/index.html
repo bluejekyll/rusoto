@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `rusoto_health` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, rusoto_health">
+
+    <title>rusoto_health - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate rusoto_health</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'rusoto_health', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>rusoto_health</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/rusoto_health/lib.rs.html#2-17' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Health APIs and Notifications</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.AWSHealthClient.html">AWSHealthClient</a> and <a href="trait.AWSHealth.html">AWSHealth</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.AWSHealthClient.html"
+                                  title='struct rusoto_health::AWSHealthClient'>AWSHealthClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the AWSHealth API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.AffectedEntity.html"
+                                  title='struct rusoto_health::AffectedEntity'>AffectedEntity</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about an entity that is affected by a Health event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DateTimeRange.html"
+                                  title='struct rusoto_health::DateTimeRange'>DateTimeRange</a></td>
+                           <td class='docblock-short'>
+                                <p>A range of dates and times that is used by the <a>EventFilter</a> and <a>EntityFilter</a> objects. If <code>from</code> is set and <code>to</code> is set: match items where the timestamp (<code>startTime</code>, <code>endTime</code>, or <code>lastUpdatedTime</code>) is between <code>from</code> and <code>to</code> inclusive. If <code>from</code> is set and <code>to</code> is not set: match items where the timestamp value is equal to or after <code>from</code>. If <code>from</code> is not set and <code>to</code> is set: match items where the timestamp value is equal to or before <code>to</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeAffectedEntitiesRequest.html"
+                                  title='struct rusoto_health::DescribeAffectedEntitiesRequest'>DescribeAffectedEntitiesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeAffectedEntitiesResponse.html"
+                                  title='struct rusoto_health::DescribeAffectedEntitiesResponse'>DescribeAffectedEntitiesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEntityAggregatesRequest.html"
+                                  title='struct rusoto_health::DescribeEntityAggregatesRequest'>DescribeEntityAggregatesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEntityAggregatesResponse.html"
+                                  title='struct rusoto_health::DescribeEntityAggregatesResponse'>DescribeEntityAggregatesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventAggregatesRequest.html"
+                                  title='struct rusoto_health::DescribeEventAggregatesRequest'>DescribeEventAggregatesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventAggregatesResponse.html"
+                                  title='struct rusoto_health::DescribeEventAggregatesResponse'>DescribeEventAggregatesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventDetailsRequest.html"
+                                  title='struct rusoto_health::DescribeEventDetailsRequest'>DescribeEventDetailsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventDetailsResponse.html"
+                                  title='struct rusoto_health::DescribeEventDetailsResponse'>DescribeEventDetailsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventTypesRequest.html"
+                                  title='struct rusoto_health::DescribeEventTypesRequest'>DescribeEventTypesRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventTypesResponse.html"
+                                  title='struct rusoto_health::DescribeEventTypesResponse'>DescribeEventTypesResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventsRequest.html"
+                                  title='struct rusoto_health::DescribeEventsRequest'>DescribeEventsRequest</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEventsResponse.html"
+                                  title='struct rusoto_health::DescribeEventsResponse'>DescribeEventsResponse</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EntityAggregate.html"
+                                  title='struct rusoto_health::EntityAggregate'>EntityAggregate</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of entities that are affected by one or more events. Returned by the <a>DescribeEntityAggregates</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EntityFilter.html"
+                                  title='struct rusoto_health::EntityFilter'>EntityFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>The values to use to filter results from the <a>DescribeAffectedEntities</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Event.html"
+                                  title='struct rusoto_health::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Summary information about an event, returned by the <a>DescribeEvents</a> operation. The <a>DescribeEventDetails</a> operation also returns this information, as well as the <a>EventDescription</a> and additional event metadata.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EventAggregate.html"
+                                  title='struct rusoto_health::EventAggregate'>EventAggregate</a></td>
+                           <td class='docblock-short'>
+                                <p>The number of events of each issue type. Returned by the <a>DescribeEventAggregates</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EventDetails.html"
+                                  title='struct rusoto_health::EventDetails'>EventDetails</a></td>
+                           <td class='docblock-short'>
+                                <p>Detailed information about an event. A combination of an <a>Event</a> object, an <a>EventDescription</a> object, and additional metadata about the event. Returned by the <a>DescribeEventDetails</a> operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EventDetailsErrorItem.html"
+                                  title='struct rusoto_health::EventDetailsErrorItem'>EventDetailsErrorItem</a></td>
+                           <td class='docblock-short'>
+                                <p>Error information returned when a <a>DescribeEventDetails</a> operation cannot find a specified event.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EventFilter.html"
+                                  title='struct rusoto_health::EventFilter'>EventFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>The values to use to filter results from the <a>DescribeEvents</a> and <a>DescribeEventAggregates</a> operations.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EventTypeFilter.html"
+                                  title='struct rusoto_health::EventTypeFilter'>EventTypeFilter</a></td>
+                           <td class='docblock-short'>
+                                <p>The values to use to filter results from the <a>DescribeEventTypes</a> operation.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeAffectedEntitiesError.html"
+                                  title='enum rusoto_health::DescribeAffectedEntitiesError'>DescribeAffectedEntitiesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeAffectedEntities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeEntityAggregatesError.html"
+                                  title='enum rusoto_health::DescribeEntityAggregatesError'>DescribeEntityAggregatesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEntityAggregates</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeEventAggregatesError.html"
+                                  title='enum rusoto_health::DescribeEventAggregatesError'>DescribeEventAggregatesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEventAggregates</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeEventDetailsError.html"
+                                  title='enum rusoto_health::DescribeEventDetailsError'>DescribeEventDetailsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEventDetails</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeEventTypesError.html"
+                                  title='enum rusoto_health::DescribeEventTypesError'>DescribeEventTypesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEventTypes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeEventsError.html"
+                                  title='enum rusoto_health::DescribeEventsError'>DescribeEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEvents</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.AWSHealth.html"
+                                  title='trait rusoto_health::AWSHealth'>AWSHealth</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait representing the capabilities of the AWSHealth API. AWSHealth clients implement this trait.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AccountId.html"
+                                  title='type rusoto_health::AccountId'>AccountId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AggregateValue.html"
+                                  title='type rusoto_health::AggregateValue'>AggregateValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AvailabilityZone.html"
+                                  title='type rusoto_health::AvailabilityZone'>AvailabilityZone</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AvailabilityZones.html"
+                                  title='type rusoto_health::AvailabilityZones'>AvailabilityZones</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Count.html"
+                                  title='type rusoto_health::Count'>Count</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DateTimeRangeList.html"
+                                  title='type rusoto_health::DateTimeRangeList'>DateTimeRangeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DescribeEventDetailsFailedSet.html"
+                                  title='type rusoto_health::DescribeEventDetailsFailedSet'>DescribeEventDetailsFailedSet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DescribeEventDetailsSuccessfulSet.html"
+                                  title='type rusoto_health::DescribeEventDetailsSuccessfulSet'>DescribeEventDetailsSuccessfulSet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityAggregateList.html"
+                                  title='type rusoto_health::EntityAggregateList'>EntityAggregateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityArn.html"
+                                  title='type rusoto_health::EntityArn'>EntityArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityArnList.html"
+                                  title='type rusoto_health::EntityArnList'>EntityArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityList.html"
+                                  title='type rusoto_health::EntityList'>EntityList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityStatusCode.html"
+                                  title='type rusoto_health::EntityStatusCode'>EntityStatusCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityStatusCodeList.html"
+                                  title='type rusoto_health::EntityStatusCodeList'>EntityStatusCodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityValue.html"
+                                  title='type rusoto_health::EntityValue'>EntityValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EntityValueList.html"
+                                  title='type rusoto_health::EntityValueList'>EntityValueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventAggregateField.html"
+                                  title='type rusoto_health::EventAggregateField'>EventAggregateField</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventAggregateList.html"
+                                  title='type rusoto_health::EventAggregateList'>EventAggregateList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventArn.html"
+                                  title='type rusoto_health::EventArn'>EventArn</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventArnList.html"
+                                  title='type rusoto_health::EventArnList'>EventArnList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventArnsList.html"
+                                  title='type rusoto_health::EventArnsList'>EventArnsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventDescription.html"
+                                  title='type rusoto_health::EventDescription'>EventDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventList.html"
+                                  title='type rusoto_health::EventList'>EventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventMetadata.html"
+                                  title='type rusoto_health::EventMetadata'>EventMetadata</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventStatusCode.html"
+                                  title='type rusoto_health::EventStatusCode'>EventStatusCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventStatusCodeList.html"
+                                  title='type rusoto_health::EventStatusCodeList'>EventStatusCodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventType.html"
+                                  title='type rusoto_health::EventType'>EventType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventTypeCategory.html"
+                                  title='type rusoto_health::EventTypeCategory'>EventTypeCategory</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventTypeCategoryList.html"
+                                  title='type rusoto_health::EventTypeCategoryList'>EventTypeCategoryList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventTypeCode.html"
+                                  title='type rusoto_health::EventTypeCode'>EventTypeCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventTypeCodeList.html"
+                                  title='type rusoto_health::EventTypeCodeList'>EventTypeCodeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventTypeList.html"
+                                  title='type rusoto_health::EventTypeList'>EventTypeList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Locale.html"
+                                  title='type rusoto_health::Locale'>Locale</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MaxResults.html"
+                                  title='type rusoto_health::MaxResults'>MaxResults</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MetadataKey.html"
+                                  title='type rusoto_health::MetadataKey'>MetadataKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MetadataValue.html"
+                                  title='type rusoto_health::MetadataValue'>MetadataValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NextToken.html"
+                                  title='type rusoto_health::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Region.html"
+                                  title='type rusoto_health::Region'>Region</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RegionList.html"
+                                  title='type rusoto_health::RegionList'>RegionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Service.html"
+                                  title='type rusoto_health::Service'>Service</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ServiceList.html"
+                                  title='type rusoto_health::ServiceList'>ServiceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TagFilter.html"
+                                  title='type rusoto_health::TagFilter'>TagFilter</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TagKey.html"
+                                  title='type rusoto_health::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TagSet.html"
+                                  title='type rusoto_health::TagSet'>TagSet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TagValue.html"
+                                  title='type rusoto_health::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Timestamp.html"
+                                  title='type rusoto_health::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "rusoto_health";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

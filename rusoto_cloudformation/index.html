@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `rusoto_cloudformation` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, rusoto_cloudformation">
+
+    <title>rusoto_cloudformation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate rusoto_cloudformation</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'rusoto_cloudformation', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>rusoto_cloudformation</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/rusoto_cloudformation/lib.rs.html#2-14' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS CloudFormation</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.CloudFormationClient.html">CloudFormationClient</a> and <a href="trait.CloudFormation.html">CloudFormation</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.AccountLimit.html"
+                                  title='struct rusoto_cloudformation::AccountLimit'>AccountLimit</a></td>
+                           <td class='docblock-short'>
+                                <p>The AccountLimit data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CancelUpdateStackInput.html"
+                                  title='struct rusoto_cloudformation::CancelUpdateStackInput'>CancelUpdateStackInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>CancelUpdateStack</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Change.html"
+                                  title='struct rusoto_cloudformation::Change'>Change</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Change</code> structure describes the changes AWS CloudFormation will perform if you execute the change set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ChangeSetSummary.html"
+                                  title='struct rusoto_cloudformation::ChangeSetSummary'>ChangeSetSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ChangeSetSummary</code> structure describes a change set, its status, and the stack with which it's associated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CloudFormationClient.html"
+                                  title='struct rusoto_cloudformation::CloudFormationClient'>CloudFormationClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the AWS CloudFormation API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ContinueUpdateRollbackInput.html"
+                                  title='struct rusoto_cloudformation::ContinueUpdateRollbackInput'>ContinueUpdateRollbackInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>ContinueUpdateRollback</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ContinueUpdateRollbackOutput.html"
+                                  title='struct rusoto_cloudformation::ContinueUpdateRollbackOutput'>ContinueUpdateRollbackOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>ContinueUpdateRollback</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateChangeSetInput.html"
+                                  title='struct rusoto_cloudformation::CreateChangeSetInput'>CreateChangeSetInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>CreateChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateChangeSetOutput.html"
+                                  title='struct rusoto_cloudformation::CreateChangeSetOutput'>CreateChangeSetOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>CreateChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateStackInput.html"
+                                  title='struct rusoto_cloudformation::CreateStackInput'>CreateStackInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>CreateStack</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateStackOutput.html"
+                                  title='struct rusoto_cloudformation::CreateStackOutput'>CreateStackOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>CreateStack</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteChangeSetInput.html"
+                                  title='struct rusoto_cloudformation::DeleteChangeSetInput'>DeleteChangeSetInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DeleteChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteChangeSetOutput.html"
+                                  title='struct rusoto_cloudformation::DeleteChangeSetOutput'>DeleteChangeSetOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DeleteChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteStackInput.html"
+                                  title='struct rusoto_cloudformation::DeleteStackInput'>DeleteStackInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>DeleteStack</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeAccountLimitsInput.html"
+                                  title='struct rusoto_cloudformation::DescribeAccountLimitsInput'>DescribeAccountLimitsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DescribeAccountLimits</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeAccountLimitsOutput.html"
+                                  title='struct rusoto_cloudformation::DescribeAccountLimitsOutput'>DescribeAccountLimitsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DescribeAccountLimits</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeChangeSetInput.html"
+                                  title='struct rusoto_cloudformation::DescribeChangeSetInput'>DescribeChangeSetInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>DescribeChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeChangeSetOutput.html"
+                                  title='struct rusoto_cloudformation::DescribeChangeSetOutput'>DescribeChangeSetOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>DescribeChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStackEventsInput.html"
+                                  title='struct rusoto_cloudformation::DescribeStackEventsInput'>DescribeStackEventsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>DescribeStackEvents</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStackEventsOutput.html"
+                                  title='struct rusoto_cloudformation::DescribeStackEventsOutput'>DescribeStackEventsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>DescribeStackEvents</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStackResourceInput.html"
+                                  title='struct rusoto_cloudformation::DescribeStackResourceInput'>DescribeStackResourceInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>DescribeStackResource</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStackResourceOutput.html"
+                                  title='struct rusoto_cloudformation::DescribeStackResourceOutput'>DescribeStackResourceOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>DescribeStackResource</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStackResourcesInput.html"
+                                  title='struct rusoto_cloudformation::DescribeStackResourcesInput'>DescribeStackResourcesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>DescribeStackResources</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStackResourcesOutput.html"
+                                  title='struct rusoto_cloudformation::DescribeStackResourcesOutput'>DescribeStackResourcesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>DescribeStackResources</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStacksInput.html"
+                                  title='struct rusoto_cloudformation::DescribeStacksInput'>DescribeStacksInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>DescribeStacks</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeStacksOutput.html"
+                                  title='struct rusoto_cloudformation::DescribeStacksOutput'>DescribeStacksOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>DescribeStacks</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EstimateTemplateCostInput.html"
+                                  title='struct rusoto_cloudformation::EstimateTemplateCostInput'>EstimateTemplateCostInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for an <a>EstimateTemplateCost</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EstimateTemplateCostOutput.html"
+                                  title='struct rusoto_cloudformation::EstimateTemplateCostOutput'>EstimateTemplateCostOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>EstimateTemplateCost</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ExecuteChangeSetInput.html"
+                                  title='struct rusoto_cloudformation::ExecuteChangeSetInput'>ExecuteChangeSetInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>ExecuteChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ExecuteChangeSetOutput.html"
+                                  title='struct rusoto_cloudformation::ExecuteChangeSetOutput'>ExecuteChangeSetOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>ExecuteChangeSet</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Export.html"
+                                  title='struct rusoto_cloudformation::Export'>Export</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Export</code> structure describes the exported output values for a stack.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetStackPolicyInput.html"
+                                  title='struct rusoto_cloudformation::GetStackPolicyInput'>GetStackPolicyInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>GetStackPolicy</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetStackPolicyOutput.html"
+                                  title='struct rusoto_cloudformation::GetStackPolicyOutput'>GetStackPolicyOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>GetStackPolicy</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetTemplateInput.html"
+                                  title='struct rusoto_cloudformation::GetTemplateInput'>GetTemplateInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for a <a>GetTemplate</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetTemplateOutput.html"
+                                  title='struct rusoto_cloudformation::GetTemplateOutput'>GetTemplateOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for <a>GetTemplate</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetTemplateSummaryInput.html"
+                                  title='struct rusoto_cloudformation::GetTemplateSummaryInput'>GetTemplateSummaryInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>GetTemplateSummary</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetTemplateSummaryOutput.html"
+                                  title='struct rusoto_cloudformation::GetTemplateSummaryOutput'>GetTemplateSummaryOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>GetTemplateSummary</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListChangeSetsInput.html"
+                                  title='struct rusoto_cloudformation::ListChangeSetsInput'>ListChangeSetsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>ListChangeSets</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListChangeSetsOutput.html"
+                                  title='struct rusoto_cloudformation::ListChangeSetsOutput'>ListChangeSetsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for the <a>ListChangeSets</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListExportsInput.html"
+                                  title='struct rusoto_cloudformation::ListExportsInput'>ListExportsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListExportsOutput.html"
+                                  title='struct rusoto_cloudformation::ListExportsOutput'>ListExportsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListImportsInput.html"
+                                  title='struct rusoto_cloudformation::ListImportsInput'>ListImportsInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListImportsOutput.html"
+                                  title='struct rusoto_cloudformation::ListImportsOutput'>ListImportsOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListStackResourcesInput.html"
+                                  title='struct rusoto_cloudformation::ListStackResourcesInput'>ListStackResourcesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>ListStackResource</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListStackResourcesOutput.html"
+                                  title='struct rusoto_cloudformation::ListStackResourcesOutput'>ListStackResourcesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for a <a>ListStackResources</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListStacksInput.html"
+                                  title='struct rusoto_cloudformation::ListStacksInput'>ListStacksInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>ListStacks</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListStacksOutput.html"
+                                  title='struct rusoto_cloudformation::ListStacksOutput'>ListStacksOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for <a>ListStacks</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Output.html"
+                                  title='struct rusoto_cloudformation::Output'>Output</a></td>
+                           <td class='docblock-short'>
+                                <p>The Output data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Parameter.html"
+                                  title='struct rusoto_cloudformation::Parameter'>Parameter</a></td>
+                           <td class='docblock-short'>
+                                <p>The Parameter data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ParameterConstraints.html"
+                                  title='struct rusoto_cloudformation::ParameterConstraints'>ParameterConstraints</a></td>
+                           <td class='docblock-short'>
+                                <p>A set of criteria that AWS CloudFormation uses to validate parameter values. Although other constraints might be defined in the stack template, AWS CloudFormation returns only the <code>AllowedValues</code> property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ParameterDeclaration.html"
+                                  title='struct rusoto_cloudformation::ParameterDeclaration'>ParameterDeclaration</a></td>
+                           <td class='docblock-short'>
+                                <p>The ParameterDeclaration data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ResourceChange.html"
+                                  title='struct rusoto_cloudformation::ResourceChange'>ResourceChange</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>ResourceChange</code> structure describes the resource and the action that AWS CloudFormation will perform on it if you execute this change set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ResourceChangeDetail.html"
+                                  title='struct rusoto_cloudformation::ResourceChangeDetail'>ResourceChangeDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>For a resource with <code>Modify</code> as the action, the <code>ResourceChange</code> structure describes the changes AWS CloudFormation will make to that resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ResourceTargetDefinition.html"
+                                  title='struct rusoto_cloudformation::ResourceTargetDefinition'>ResourceTargetDefinition</a></td>
+                           <td class='docblock-short'>
+                                <p>The field that AWS CloudFormation will change, such as the name of a resource's property, and whether the resource will be recreated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.SetStackPolicyInput.html"
+                                  title='struct rusoto_cloudformation::SetStackPolicyInput'>SetStackPolicyInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>SetStackPolicy</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.SignalResourceInput.html"
+                                  title='struct rusoto_cloudformation::SignalResourceInput'>SignalResourceInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for the <a>SignalResource</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Stack.html"
+                                  title='struct rusoto_cloudformation::Stack'>Stack</a></td>
+                           <td class='docblock-short'>
+                                <p>The Stack data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StackEvent.html"
+                                  title='struct rusoto_cloudformation::StackEvent'>StackEvent</a></td>
+                           <td class='docblock-short'>
+                                <p>The StackEvent data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StackResource.html"
+                                  title='struct rusoto_cloudformation::StackResource'>StackResource</a></td>
+                           <td class='docblock-short'>
+                                <p>The StackResource data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StackResourceDetail.html"
+                                  title='struct rusoto_cloudformation::StackResourceDetail'>StackResourceDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains detailed information about the specified stack resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StackResourceSummary.html"
+                                  title='struct rusoto_cloudformation::StackResourceSummary'>StackResourceSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>Contains high-level information about the specified stack resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StackSummary.html"
+                                  title='struct rusoto_cloudformation::StackSummary'>StackSummary</a></td>
+                           <td class='docblock-short'>
+                                <p>The StackSummary Data Type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tag.html"
+                                  title='struct rusoto_cloudformation::Tag'>Tag</a></td>
+                           <td class='docblock-short'>
+                                <p>The Tag type enables you to specify a key-value pair that can be used to store information about an AWS CloudFormation stack.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TemplateParameter.html"
+                                  title='struct rusoto_cloudformation::TemplateParameter'>TemplateParameter</a></td>
+                           <td class='docblock-short'>
+                                <p>The TemplateParameter data type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateStackInput.html"
+                                  title='struct rusoto_cloudformation::UpdateStackInput'>UpdateStackInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for an <a>UpdateStack</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateStackOutput.html"
+                                  title='struct rusoto_cloudformation::UpdateStackOutput'>UpdateStackOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for an <a>UpdateStack</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ValidateTemplateInput.html"
+                                  title='struct rusoto_cloudformation::ValidateTemplateInput'>ValidateTemplateInput</a></td>
+                           <td class='docblock-short'>
+                                <p>The input for <a>ValidateTemplate</a> action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ValidateTemplateOutput.html"
+                                  title='struct rusoto_cloudformation::ValidateTemplateOutput'>ValidateTemplateOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>The output for <a>ValidateTemplate</a> action.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CancelUpdateStackError.html"
+                                  title='enum rusoto_cloudformation::CancelUpdateStackError'>CancelUpdateStackError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CancelUpdateStack</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ContinueUpdateRollbackError.html"
+                                  title='enum rusoto_cloudformation::ContinueUpdateRollbackError'>ContinueUpdateRollbackError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ContinueUpdateRollback</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateChangeSetError.html"
+                                  title='enum rusoto_cloudformation::CreateChangeSetError'>CreateChangeSetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateChangeSet</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateStackError.html"
+                                  title='enum rusoto_cloudformation::CreateStackError'>CreateStackError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateStack</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteChangeSetError.html"
+                                  title='enum rusoto_cloudformation::DeleteChangeSetError'>DeleteChangeSetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteChangeSet</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteStackError.html"
+                                  title='enum rusoto_cloudformation::DeleteStackError'>DeleteStackError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteStack</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeAccountLimitsError.html"
+                                  title='enum rusoto_cloudformation::DescribeAccountLimitsError'>DescribeAccountLimitsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeAccountLimits</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeChangeSetError.html"
+                                  title='enum rusoto_cloudformation::DescribeChangeSetError'>DescribeChangeSetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeChangeSet</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeStackEventsError.html"
+                                  title='enum rusoto_cloudformation::DescribeStackEventsError'>DescribeStackEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeStackEvents</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeStackResourceError.html"
+                                  title='enum rusoto_cloudformation::DescribeStackResourceError'>DescribeStackResourceError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeStackResource</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeStackResourcesError.html"
+                                  title='enum rusoto_cloudformation::DescribeStackResourcesError'>DescribeStackResourcesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeStackResources</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeStacksError.html"
+                                  title='enum rusoto_cloudformation::DescribeStacksError'>DescribeStacksError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeStacks</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.EstimateTemplateCostError.html"
+                                  title='enum rusoto_cloudformation::EstimateTemplateCostError'>EstimateTemplateCostError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by EstimateTemplateCost</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ExecuteChangeSetError.html"
+                                  title='enum rusoto_cloudformation::ExecuteChangeSetError'>ExecuteChangeSetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ExecuteChangeSet</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetStackPolicyError.html"
+                                  title='enum rusoto_cloudformation::GetStackPolicyError'>GetStackPolicyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetStackPolicy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetTemplateError.html"
+                                  title='enum rusoto_cloudformation::GetTemplateError'>GetTemplateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetTemplate</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetTemplateSummaryError.html"
+                                  title='enum rusoto_cloudformation::GetTemplateSummaryError'>GetTemplateSummaryError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetTemplateSummary</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListChangeSetsError.html"
+                                  title='enum rusoto_cloudformation::ListChangeSetsError'>ListChangeSetsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListChangeSets</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListExportsError.html"
+                                  title='enum rusoto_cloudformation::ListExportsError'>ListExportsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListExports</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListImportsError.html"
+                                  title='enum rusoto_cloudformation::ListImportsError'>ListImportsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListImports</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListStackResourcesError.html"
+                                  title='enum rusoto_cloudformation::ListStackResourcesError'>ListStackResourcesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListStackResources</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListStacksError.html"
+                                  title='enum rusoto_cloudformation::ListStacksError'>ListStacksError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListStacks</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.SetStackPolicyError.html"
+                                  title='enum rusoto_cloudformation::SetStackPolicyError'>SetStackPolicyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SetStackPolicy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.SignalResourceError.html"
+                                  title='enum rusoto_cloudformation::SignalResourceError'>SignalResourceError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SignalResource</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateStackError.html"
+                                  title='enum rusoto_cloudformation::UpdateStackError'>UpdateStackError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateStack</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ValidateTemplateError.html"
+                                  title='enum rusoto_cloudformation::ValidateTemplateError'>ValidateTemplateError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ValidateTemplate</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.CloudFormation.html"
+                                  title='trait rusoto_cloudformation::CloudFormation'>CloudFormation</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait representing the capabilities of the AWS CloudFormation API. AWS CloudFormation clients implement this trait.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AccountLimitList.html"
+                                  title='type rusoto_cloudformation::AccountLimitList'>AccountLimitList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AllowedValue.html"
+                                  title='type rusoto_cloudformation::AllowedValue'>AllowedValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AllowedValues.html"
+                                  title='type rusoto_cloudformation::AllowedValues'>AllowedValues</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Capabilities.html"
+                                  title='type rusoto_cloudformation::Capabilities'>Capabilities</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.CapabilitiesReason.html"
+                                  title='type rusoto_cloudformation::CapabilitiesReason'>CapabilitiesReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Capability.html"
+                                  title='type rusoto_cloudformation::Capability'>Capability</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.CausingEntity.html"
+                                  title='type rusoto_cloudformation::CausingEntity'>CausingEntity</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeAction.html"
+                                  title='type rusoto_cloudformation::ChangeAction'>ChangeAction</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetId.html"
+                                  title='type rusoto_cloudformation::ChangeSetId'>ChangeSetId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetName.html"
+                                  title='type rusoto_cloudformation::ChangeSetName'>ChangeSetName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetNameOrId.html"
+                                  title='type rusoto_cloudformation::ChangeSetNameOrId'>ChangeSetNameOrId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetStatus.html"
+                                  title='type rusoto_cloudformation::ChangeSetStatus'>ChangeSetStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetStatusReason.html"
+                                  title='type rusoto_cloudformation::ChangeSetStatusReason'>ChangeSetStatusReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetSummaries.html"
+                                  title='type rusoto_cloudformation::ChangeSetSummaries'>ChangeSetSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSetType.html"
+                                  title='type rusoto_cloudformation::ChangeSetType'>ChangeSetType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeSource.html"
+                                  title='type rusoto_cloudformation::ChangeSource'>ChangeSource</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ChangeType.html"
+                                  title='type rusoto_cloudformation::ChangeType'>ChangeType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Changes.html"
+                                  title='type rusoto_cloudformation::Changes'>Changes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ClientRequestToken.html"
+                                  title='type rusoto_cloudformation::ClientRequestToken'>ClientRequestToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ClientToken.html"
+                                  title='type rusoto_cloudformation::ClientToken'>ClientToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.CreationTime.html"
+                                  title='type rusoto_cloudformation::CreationTime'>CreationTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DeletionTime.html"
+                                  title='type rusoto_cloudformation::DeletionTime'>DeletionTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Description.html"
+                                  title='type rusoto_cloudformation::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DisableRollback.html"
+                                  title='type rusoto_cloudformation::DisableRollback'>DisableRollback</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EvaluationType.html"
+                                  title='type rusoto_cloudformation::EvaluationType'>EvaluationType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventId.html"
+                                  title='type rusoto_cloudformation::EventId'>EventId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ExecutionStatus.html"
+                                  title='type rusoto_cloudformation::ExecutionStatus'>ExecutionStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ExportName.html"
+                                  title='type rusoto_cloudformation::ExportName'>ExportName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ExportValue.html"
+                                  title='type rusoto_cloudformation::ExportValue'>ExportValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Exports.html"
+                                  title='type rusoto_cloudformation::Exports'>Exports</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Imports.html"
+                                  title='type rusoto_cloudformation::Imports'>Imports</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LastUpdatedTime.html"
+                                  title='type rusoto_cloudformation::LastUpdatedTime'>LastUpdatedTime</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LimitName.html"
+                                  title='type rusoto_cloudformation::LimitName'>LimitName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LimitValue.html"
+                                  title='type rusoto_cloudformation::LimitValue'>LimitValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LogicalResourceId.html"
+                                  title='type rusoto_cloudformation::LogicalResourceId'>LogicalResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Metadata.html"
+                                  title='type rusoto_cloudformation::Metadata'>Metadata</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NextToken.html"
+                                  title='type rusoto_cloudformation::NextToken'>NextToken</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NoEcho.html"
+                                  title='type rusoto_cloudformation::NoEcho'>NoEcho</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NotificationARN.html"
+                                  title='type rusoto_cloudformation::NotificationARN'>NotificationARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NotificationARNs.html"
+                                  title='type rusoto_cloudformation::NotificationARNs'>NotificationARNs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.OnFailure.html"
+                                  title='type rusoto_cloudformation::OnFailure'>OnFailure</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.OutputKey.html"
+                                  title='type rusoto_cloudformation::OutputKey'>OutputKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.OutputValue.html"
+                                  title='type rusoto_cloudformation::OutputValue'>OutputValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Outputs.html"
+                                  title='type rusoto_cloudformation::Outputs'>Outputs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ParameterDeclarations.html"
+                                  title='type rusoto_cloudformation::ParameterDeclarations'>ParameterDeclarations</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ParameterKey.html"
+                                  title='type rusoto_cloudformation::ParameterKey'>ParameterKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ParameterType.html"
+                                  title='type rusoto_cloudformation::ParameterType'>ParameterType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ParameterValue.html"
+                                  title='type rusoto_cloudformation::ParameterValue'>ParameterValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Parameters.html"
+                                  title='type rusoto_cloudformation::Parameters'>Parameters</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PhysicalResourceId.html"
+                                  title='type rusoto_cloudformation::PhysicalResourceId'>PhysicalResourceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PropertyName.html"
+                                  title='type rusoto_cloudformation::PropertyName'>PropertyName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Replacement.html"
+                                  title='type rusoto_cloudformation::Replacement'>Replacement</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RequiresRecreation.html"
+                                  title='type rusoto_cloudformation::RequiresRecreation'>RequiresRecreation</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceAttribute.html"
+                                  title='type rusoto_cloudformation::ResourceAttribute'>ResourceAttribute</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceChangeDetails.html"
+                                  title='type rusoto_cloudformation::ResourceChangeDetails'>ResourceChangeDetails</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceProperties.html"
+                                  title='type rusoto_cloudformation::ResourceProperties'>ResourceProperties</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceSignalStatus.html"
+                                  title='type rusoto_cloudformation::ResourceSignalStatus'>ResourceSignalStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceSignalUniqueId.html"
+                                  title='type rusoto_cloudformation::ResourceSignalUniqueId'>ResourceSignalUniqueId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceStatus.html"
+                                  title='type rusoto_cloudformation::ResourceStatus'>ResourceStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceStatusReason.html"
+                                  title='type rusoto_cloudformation::ResourceStatusReason'>ResourceStatusReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceToSkip.html"
+                                  title='type rusoto_cloudformation::ResourceToSkip'>ResourceToSkip</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceType.html"
+                                  title='type rusoto_cloudformation::ResourceType'>ResourceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourceTypes.html"
+                                  title='type rusoto_cloudformation::ResourceTypes'>ResourceTypes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ResourcesToSkip.html"
+                                  title='type rusoto_cloudformation::ResourcesToSkip'>ResourcesToSkip</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RetainResources.html"
+                                  title='type rusoto_cloudformation::RetainResources'>RetainResources</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RoleARN.html"
+                                  title='type rusoto_cloudformation::RoleARN'>RoleARN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Scope.html"
+                                  title='type rusoto_cloudformation::Scope'>Scope</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackEvents.html"
+                                  title='type rusoto_cloudformation::StackEvents'>StackEvents</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackId.html"
+                                  title='type rusoto_cloudformation::StackId'>StackId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackName.html"
+                                  title='type rusoto_cloudformation::StackName'>StackName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackNameOrId.html"
+                                  title='type rusoto_cloudformation::StackNameOrId'>StackNameOrId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackPolicyBody.html"
+                                  title='type rusoto_cloudformation::StackPolicyBody'>StackPolicyBody</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackPolicyDuringUpdateBody.html"
+                                  title='type rusoto_cloudformation::StackPolicyDuringUpdateBody'>StackPolicyDuringUpdateBody</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackPolicyDuringUpdateURL.html"
+                                  title='type rusoto_cloudformation::StackPolicyDuringUpdateURL'>StackPolicyDuringUpdateURL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackPolicyURL.html"
+                                  title='type rusoto_cloudformation::StackPolicyURL'>StackPolicyURL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackResourceSummaries.html"
+                                  title='type rusoto_cloudformation::StackResourceSummaries'>StackResourceSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackResources.html"
+                                  title='type rusoto_cloudformation::StackResources'>StackResources</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackStatus.html"
+                                  title='type rusoto_cloudformation::StackStatus'>StackStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackStatusFilter.html"
+                                  title='type rusoto_cloudformation::StackStatusFilter'>StackStatusFilter</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackStatusReason.html"
+                                  title='type rusoto_cloudformation::StackStatusReason'>StackStatusReason</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StackSummaries.html"
+                                  title='type rusoto_cloudformation::StackSummaries'>StackSummaries</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Stacks.html"
+                                  title='type rusoto_cloudformation::Stacks'>Stacks</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StageList.html"
+                                  title='type rusoto_cloudformation::StageList'>StageList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TagKey.html"
+                                  title='type rusoto_cloudformation::TagKey'>TagKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TagValue.html"
+                                  title='type rusoto_cloudformation::TagValue'>TagValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Tags.html"
+                                  title='type rusoto_cloudformation::Tags'>Tags</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TemplateBody.html"
+                                  title='type rusoto_cloudformation::TemplateBody'>TemplateBody</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TemplateDescription.html"
+                                  title='type rusoto_cloudformation::TemplateDescription'>TemplateDescription</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TemplateParameters.html"
+                                  title='type rusoto_cloudformation::TemplateParameters'>TemplateParameters</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TemplateStage.html"
+                                  title='type rusoto_cloudformation::TemplateStage'>TemplateStage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TemplateURL.html"
+                                  title='type rusoto_cloudformation::TemplateURL'>TemplateURL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TimeoutMinutes.html"
+                                  title='type rusoto_cloudformation::TimeoutMinutes'>TimeoutMinutes</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Timestamp.html"
+                                  title='type rusoto_cloudformation::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TransformName.html"
+                                  title='type rusoto_cloudformation::TransformName'>TransformName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TransformsList.html"
+                                  title='type rusoto_cloudformation::TransformsList'>TransformsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Url.html"
+                                  title='type rusoto_cloudformation::Url'>Url</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.UsePreviousTemplate.html"
+                                  title='type rusoto_cloudformation::UsePreviousTemplate'>UsePreviousTemplate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.UsePreviousValue.html"
+                                  title='type rusoto_cloudformation::UsePreviousValue'>UsePreviousValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Version.html"
+                                  title='type rusoto_cloudformation::Version'>Version</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "rusoto_cloudformation";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

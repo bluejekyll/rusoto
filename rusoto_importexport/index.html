@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `rusoto_importexport` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, rusoto_importexport">
+
+    <title>rusoto_importexport - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate rusoto_importexport</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'rusoto_importexport', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>rusoto_importexport</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/rusoto_importexport/lib.rs.html#2-14' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>AWS Import/Export</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.ImportExportClient.html">ImportExportClient</a> and <a href="trait.ImportExport.html">ImportExport</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Artifact.html"
+                                  title='struct rusoto_importexport::Artifact'>Artifact</a></td>
+                           <td class='docblock-short'>
+                                <p>A discrete item that contains the description and URL of an artifact (such as a PDF).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CancelJobInput.html"
+                                  title='struct rusoto_importexport::CancelJobInput'>CancelJobInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input structure for the CancelJob operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CancelJobOutput.html"
+                                  title='struct rusoto_importexport::CancelJobOutput'>CancelJobOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output structure for the CancelJob operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateJobInput.html"
+                                  title='struct rusoto_importexport::CreateJobInput'>CreateJobInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input structure for the CreateJob operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateJobOutput.html"
+                                  title='struct rusoto_importexport::CreateJobOutput'>CreateJobOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output structure for the CreateJob operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetShippingLabelInput.html"
+                                  title='struct rusoto_importexport::GetShippingLabelInput'>GetShippingLabelInput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetShippingLabelOutput.html"
+                                  title='struct rusoto_importexport::GetShippingLabelOutput'>GetShippingLabelOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetStatusInput.html"
+                                  title='struct rusoto_importexport::GetStatusInput'>GetStatusInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input structure for the GetStatus operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetStatusOutput.html"
+                                  title='struct rusoto_importexport::GetStatusOutput'>GetStatusOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output structure for the GetStatus operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ImportExportClient.html"
+                                  title='struct rusoto_importexport::ImportExportClient'>ImportExportClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the AWS Import/Export API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Job.html"
+                                  title='struct rusoto_importexport::Job'>Job</a></td>
+                           <td class='docblock-short'>
+                                <p>Representation of a job returned by the ListJobs operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListJobsInput.html"
+                                  title='struct rusoto_importexport::ListJobsInput'>ListJobsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input structure for the ListJobs operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListJobsOutput.html"
+                                  title='struct rusoto_importexport::ListJobsOutput'>ListJobsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output structure for the ListJobs operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateJobInput.html"
+                                  title='struct rusoto_importexport::UpdateJobInput'>UpdateJobInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Input structure for the UpateJob operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateJobOutput.html"
+                                  title='struct rusoto_importexport::UpdateJobOutput'>UpdateJobOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Output structure for the UpateJob operation.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CancelJobError.html"
+                                  title='enum rusoto_importexport::CancelJobError'>CancelJobError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CancelJob</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateJobError.html"
+                                  title='enum rusoto_importexport::CreateJobError'>CreateJobError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateJob</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetShippingLabelError.html"
+                                  title='enum rusoto_importexport::GetShippingLabelError'>GetShippingLabelError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetShippingLabel</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetStatusError.html"
+                                  title='enum rusoto_importexport::GetStatusError'>GetStatusError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetStatus</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListJobsError.html"
+                                  title='enum rusoto_importexport::ListJobsError'>ListJobsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListJobs</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateJobError.html"
+                                  title='enum rusoto_importexport::UpdateJobError'>UpdateJobError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateJob</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.ImportExport.html"
+                                  title='trait rusoto_importexport::ImportExport'>ImportExport</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait representing the capabilities of the AWS Import/Export API. AWS Import/Export clients implement this trait.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.APIVersion.html"
+                                  title='type rusoto_importexport::APIVersion'>APIVersion</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the version of the client tool.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ArtifactList.html"
+                                  title='type rusoto_importexport::ArtifactList'>ArtifactList</a></td>
+                           <td class='docblock-short'>
+                                <p>A collection of artifacts.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Carrier.html"
+                                  title='type rusoto_importexport::Carrier'>Carrier</a></td>
+                           <td class='docblock-short'>
+                                <p>Name of the shipping company. This value is included when the LocationCode is &quot;Returned&quot;.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.City.html"
+                                  title='type rusoto_importexport::City'>City</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the name of your city for the return address.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Company.html"
+                                  title='type rusoto_importexport::Company'>Company</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the name of the company that will ship this package.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Country.html"
+                                  title='type rusoto_importexport::Country'>Country</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the name of your country for the return address.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.CreationDate.html"
+                                  title='type rusoto_importexport::CreationDate'>CreationDate</a></td>
+                           <td class='docblock-short'>
+                                <p>Timestamp of the CreateJob request in ISO8601 date format. For example &quot;2010-03-28T20:27:35Z&quot;.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.CurrentManifest.html"
+                                  title='type rusoto_importexport::CurrentManifest'>CurrentManifest</a></td>
+                           <td class='docblock-short'>
+                                <p>The last manifest submitted, which will be used to process the job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Description.html"
+                                  title='type rusoto_importexport::Description'>Description</a></td>
+                           <td class='docblock-short'>
+                                <p>The associated description for this object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ErrorCount.html"
+                                  title='type rusoto_importexport::ErrorCount'>ErrorCount</a></td>
+                           <td class='docblock-short'>
+                                <p>Number of errors. We return this value when the ProgressCode is Success or SuccessWithErrors.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ErrorMessage.html"
+                                  title='type rusoto_importexport::ErrorMessage'>ErrorMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>The human-readable description of a particular error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GenericString.html"
+                                  title='type rusoto_importexport::GenericString'>GenericString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.IsCanceled.html"
+                                  title='type rusoto_importexport::IsCanceled'>IsCanceled</a></td>
+                           <td class='docblock-short'>
+                                <p>Indicates whether the job was canceled.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.IsTruncated.html"
+                                  title='type rusoto_importexport::IsTruncated'>IsTruncated</a></td>
+                           <td class='docblock-short'>
+                                <p>Indicates whether the list of jobs was truncated. If true, then call ListJobs again using the last JobId element as the marker.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.JobId.html"
+                                  title='type rusoto_importexport::JobId'>JobId</a></td>
+                           <td class='docblock-short'>
+                                <p>A unique identifier which refers to a particular job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.JobIdList.html"
+                                  title='type rusoto_importexport::JobIdList'>JobIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.JobType.html"
+                                  title='type rusoto_importexport::JobType'>JobType</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies whether the job to initiate is an import or export job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.JobsList.html"
+                                  title='type rusoto_importexport::JobsList'>JobsList</a></td>
+                           <td class='docblock-short'>
+                                <p>A list container for Jobs returned by the ListJobs operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LocationCode.html"
+                                  title='type rusoto_importexport::LocationCode'>LocationCode</a></td>
+                           <td class='docblock-short'>
+                                <p>A token representing the location of the storage device, such as &quot;AtAWS&quot;.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LocationMessage.html"
+                                  title='type rusoto_importexport::LocationMessage'>LocationMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>A more human readable form of the physical location of the storage device.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LogBucket.html"
+                                  title='type rusoto_importexport::LogBucket'>LogBucket</a></td>
+                           <td class='docblock-short'>
+                                <p>Amazon S3 bucket for user logs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LogKey.html"
+                                  title='type rusoto_importexport::LogKey'>LogKey</a></td>
+                           <td class='docblock-short'>
+                                <p>The key where the user logs were stored.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Manifest.html"
+                                  title='type rusoto_importexport::Manifest'>Manifest</a></td>
+                           <td class='docblock-short'>
+                                <p>The UTF-8 encoded text of the manifest file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ManifestAddendum.html"
+                                  title='type rusoto_importexport::ManifestAddendum'>ManifestAddendum</a></td>
+                           <td class='docblock-short'>
+                                <p>For internal use only.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Marker.html"
+                                  title='type rusoto_importexport::Marker'>Marker</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the JOBID to start after when listing the jobs created with your account. AWS Import/Export lists your jobs in reverse chronological order. See MaxJobs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MaxJobs.html"
+                                  title='type rusoto_importexport::MaxJobs'>MaxJobs</a></td>
+                           <td class='docblock-short'>
+                                <p>Sets the maximum number of jobs returned in the response. If there are additional jobs that were not returned because MaxJobs was exceeded, the response contains &lt;IsTruncated&gt;true&lt;/IsTruncated&gt;. To return the additional jobs, see Marker.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Name.html"
+                                  title='type rusoto_importexport::Name'>Name</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the name of the person responsible for shipping this package.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PhoneNumber.html"
+                                  title='type rusoto_importexport::PhoneNumber'>PhoneNumber</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the phone number of the person responsible for shipping this package.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PostalCode.html"
+                                  title='type rusoto_importexport::PostalCode'>PostalCode</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the postal code for the return address.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ProgressCode.html"
+                                  title='type rusoto_importexport::ProgressCode'>ProgressCode</a></td>
+                           <td class='docblock-short'>
+                                <p>A token representing the state of the job, such as &quot;Started&quot;.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ProgressMessage.html"
+                                  title='type rusoto_importexport::ProgressMessage'>ProgressMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>A more human readable form of the job status.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Signature.html"
+                                  title='type rusoto_importexport::Signature'>Signature</a></td>
+                           <td class='docblock-short'>
+                                <p>An encrypted code used to authenticate the request and response, for example, &quot;DV+TpDfx1/TdSE9ktyK9k/bDTVI=&quot;. Only use this value is you want to create the signature file yourself. Generally you should use the SignatureFileContents value.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.SignatureFileContents.html"
+                                  title='type rusoto_importexport::SignatureFileContents'>SignatureFileContents</a></td>
+                           <td class='docblock-short'>
+                                <p>The actual text of the SIGNATURE file to be written to disk.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StateOrProvince.html"
+                                  title='type rusoto_importexport::StateOrProvince'>StateOrProvince</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the name of your state or your province for the return address.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Street1.html"
+                                  title='type rusoto_importexport::Street1'>Street1</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the first part of the street address for the return address, for example 1234 Main Street.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Street2.html"
+                                  title='type rusoto_importexport::Street2'>Street2</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the optional second part of the street address for the return address, for example Suite 100.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Street3.html"
+                                  title='type rusoto_importexport::Street3'>Street3</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies the optional third part of the street address for the return address, for example c/o Jane Doe.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Success.html"
+                                  title='type rusoto_importexport::Success'>Success</a></td>
+                           <td class='docblock-short'>
+                                <p>Specifies whether (true) or not (false) AWS Import/Export updated your job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TrackingNumber.html"
+                                  title='type rusoto_importexport::TrackingNumber'>TrackingNumber</a></td>
+                           <td class='docblock-short'>
+                                <p>The shipping tracking number assigned by AWS Import/Export to the storage device when it&#39;s returned to you. We return this value when the LocationCode is &quot;Returned&quot;.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.URL.html"
+                                  title='type rusoto_importexport::URL'>URL</a></td>
+                           <td class='docblock-short'>
+                                <p>The URL for a given Artifact.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ValidateOnly.html"
+                                  title='type rusoto_importexport::ValidateOnly'>ValidateOnly</a></td>
+                           <td class='docblock-short'>
+                                <p>Validate the manifest and parameter values in the request but do not actually create a job.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.WarningMessage.html"
+                                  title='type rusoto_importexport::WarningMessage'>WarningMessage</a></td>
+                           <td class='docblock-short'>
+                                <p>An optional message notifying you of non-fatal issues with the job, such as use of an incompatible Amazon S3 bucket name.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "rusoto_importexport";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `rusoto_gamelift` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, rusoto_gamelift">
+
+    <title>rusoto_gamelift - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate rusoto_gamelift</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'rusoto_gamelift', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>rusoto_gamelift</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/rusoto_gamelift/lib.rs.html#2-17' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Amazon GameLift</p>
+
+<p>If you&#39;re using the service, you&#39;re probably looking for <a href="struct.GameLiftClient.html">GameLiftClient</a> and <a href="trait.GameLift.html">GameLift</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Alias.html"
+                                  title='struct rusoto_gamelift::Alias'>Alias</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Properties describing a fleet alias.</p> <p>Alias-related operations include:</p> <ul> <li> <p> <a>CreateAlias</a> </p> </li> <li> <p> <a>ListAliases</a> </p> </li> <li> <p> <a>DescribeAlias</a> </p> </li> <li> <p> <a>UpdateAlias</a> </p> </li> <li> <p> <a>DeleteAlias</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.AwsCredentials.html"
+                                  title='struct rusoto_gamelift::AwsCredentials'>AwsCredentials</a></td>
+                           <td class='docblock-short'>
+                                <p>AWS access credentials sometimes used for uploading game build files to Amazon GameLift. They are valid for a limited time. If they expire before you upload your game build, get a new set by calling <a>RequestUploadCredentials</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Build.html"
+                                  title='struct rusoto_gamelift::Build'>Build</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Properties describing a game build.</p> <p>Build-related operations include:</p> <ul> <li> <p> <a>CreateBuild</a> </p> </li> <li> <p> <a>ListBuilds</a> </p> </li> <li> <p> <a>DescribeBuild</a> </p> </li> <li> <p> <a>UpdateBuild</a> </p> </li> <li> <p> <a>DeleteBuild</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateAliasInput.html"
+                                  title='struct rusoto_gamelift::CreateAliasInput'>CreateAliasInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateAliasOutput.html"
+                                  title='struct rusoto_gamelift::CreateAliasOutput'>CreateAliasOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateBuildInput.html"
+                                  title='struct rusoto_gamelift::CreateBuildInput'>CreateBuildInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateBuildOutput.html"
+                                  title='struct rusoto_gamelift::CreateBuildOutput'>CreateBuildOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateFleetInput.html"
+                                  title='struct rusoto_gamelift::CreateFleetInput'>CreateFleetInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateFleetOutput.html"
+                                  title='struct rusoto_gamelift::CreateFleetOutput'>CreateFleetOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateGameSessionInput.html"
+                                  title='struct rusoto_gamelift::CreateGameSessionInput'>CreateGameSessionInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateGameSessionOutput.html"
+                                  title='struct rusoto_gamelift::CreateGameSessionOutput'>CreateGameSessionOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateGameSessionQueueInput.html"
+                                  title='struct rusoto_gamelift::CreateGameSessionQueueInput'>CreateGameSessionQueueInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreateGameSessionQueueOutput.html"
+                                  title='struct rusoto_gamelift::CreateGameSessionQueueOutput'>CreateGameSessionQueueOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreatePlayerSessionInput.html"
+                                  title='struct rusoto_gamelift::CreatePlayerSessionInput'>CreatePlayerSessionInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreatePlayerSessionOutput.html"
+                                  title='struct rusoto_gamelift::CreatePlayerSessionOutput'>CreatePlayerSessionOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreatePlayerSessionsInput.html"
+                                  title='struct rusoto_gamelift::CreatePlayerSessionsInput'>CreatePlayerSessionsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CreatePlayerSessionsOutput.html"
+                                  title='struct rusoto_gamelift::CreatePlayerSessionsOutput'>CreatePlayerSessionsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteAliasInput.html"
+                                  title='struct rusoto_gamelift::DeleteAliasInput'>DeleteAliasInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteBuildInput.html"
+                                  title='struct rusoto_gamelift::DeleteBuildInput'>DeleteBuildInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteFleetInput.html"
+                                  title='struct rusoto_gamelift::DeleteFleetInput'>DeleteFleetInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteGameSessionQueueInput.html"
+                                  title='struct rusoto_gamelift::DeleteGameSessionQueueInput'>DeleteGameSessionQueueInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteGameSessionQueueOutput.html"
+                                  title='struct rusoto_gamelift::DeleteGameSessionQueueOutput'>DeleteGameSessionQueueOutput</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DeleteScalingPolicyInput.html"
+                                  title='struct rusoto_gamelift::DeleteScalingPolicyInput'>DeleteScalingPolicyInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeAliasInput.html"
+                                  title='struct rusoto_gamelift::DescribeAliasInput'>DescribeAliasInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeAliasOutput.html"
+                                  title='struct rusoto_gamelift::DescribeAliasOutput'>DescribeAliasOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeBuildInput.html"
+                                  title='struct rusoto_gamelift::DescribeBuildInput'>DescribeBuildInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeBuildOutput.html"
+                                  title='struct rusoto_gamelift::DescribeBuildOutput'>DescribeBuildOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEC2InstanceLimitsInput.html"
+                                  title='struct rusoto_gamelift::DescribeEC2InstanceLimitsInput'>DescribeEC2InstanceLimitsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeEC2InstanceLimitsOutput.html"
+                                  title='struct rusoto_gamelift::DescribeEC2InstanceLimitsOutput'>DescribeEC2InstanceLimitsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetAttributesInput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetAttributesInput'>DescribeFleetAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetAttributesOutput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetAttributesOutput'>DescribeFleetAttributesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetCapacityInput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetCapacityInput'>DescribeFleetCapacityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetCapacityOutput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetCapacityOutput'>DescribeFleetCapacityOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetEventsInput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetEventsInput'>DescribeFleetEventsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetEventsOutput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetEventsOutput'>DescribeFleetEventsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetPortSettingsInput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetPortSettingsInput'>DescribeFleetPortSettingsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetPortSettingsOutput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetPortSettingsOutput'>DescribeFleetPortSettingsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetUtilizationInput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetUtilizationInput'>DescribeFleetUtilizationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeFleetUtilizationOutput.html"
+                                  title='struct rusoto_gamelift::DescribeFleetUtilizationOutput'>DescribeFleetUtilizationOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionDetailsInput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionDetailsInput'>DescribeGameSessionDetailsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionDetailsOutput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionDetailsOutput'>DescribeGameSessionDetailsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionPlacementInput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionPlacementInput'>DescribeGameSessionPlacementInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionPlacementOutput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionPlacementOutput'>DescribeGameSessionPlacementOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionQueuesInput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionQueuesInput'>DescribeGameSessionQueuesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionQueuesOutput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionQueuesOutput'>DescribeGameSessionQueuesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionsInput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionsInput'>DescribeGameSessionsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeGameSessionsOutput.html"
+                                  title='struct rusoto_gamelift::DescribeGameSessionsOutput'>DescribeGameSessionsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeInstancesInput.html"
+                                  title='struct rusoto_gamelift::DescribeInstancesInput'>DescribeInstancesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeInstancesOutput.html"
+                                  title='struct rusoto_gamelift::DescribeInstancesOutput'>DescribeInstancesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribePlayerSessionsInput.html"
+                                  title='struct rusoto_gamelift::DescribePlayerSessionsInput'>DescribePlayerSessionsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribePlayerSessionsOutput.html"
+                                  title='struct rusoto_gamelift::DescribePlayerSessionsOutput'>DescribePlayerSessionsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeRuntimeConfigurationInput.html"
+                                  title='struct rusoto_gamelift::DescribeRuntimeConfigurationInput'>DescribeRuntimeConfigurationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeRuntimeConfigurationOutput.html"
+                                  title='struct rusoto_gamelift::DescribeRuntimeConfigurationOutput'>DescribeRuntimeConfigurationOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeScalingPoliciesInput.html"
+                                  title='struct rusoto_gamelift::DescribeScalingPoliciesInput'>DescribeScalingPoliciesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DescribeScalingPoliciesOutput.html"
+                                  title='struct rusoto_gamelift::DescribeScalingPoliciesOutput'>DescribeScalingPoliciesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DesiredPlayerSession.html"
+                                  title='struct rusoto_gamelift::DesiredPlayerSession'>DesiredPlayerSession</a></td>
+                           <td class='docblock-short'>
+                                <p>Player information for use when creating player sessions using a game session placement request with <a>StartGameSessionPlacement</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EC2InstanceCounts.html"
+                                  title='struct rusoto_gamelift::EC2InstanceCounts'>EC2InstanceCounts</a></td>
+                           <td class='docblock-short'>
+                                <p>Current status of fleet capacity. The number of active instances should match or be in the process of matching the number of desired instances. Pending and terminating counts are non-zero only if fleet capacity is adjusting to an <a>UpdateFleetCapacity</a> request, or if access to resources is temporarily affected.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EC2InstanceLimit.html"
+                                  title='struct rusoto_gamelift::EC2InstanceLimit'>EC2InstanceLimit</a></td>
+                           <td class='docblock-short'>
+                                <p>Maximum number of instances allowed based on the Amazon Elastic Compute Cloud (Amazon EC2) instance type. Instance limits can be retrieved by calling <a>DescribeEC2InstanceLimits</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Event.html"
+                                  title='struct rusoto_gamelift::Event'>Event</a></td>
+                           <td class='docblock-short'>
+                                <p>Log entry describing an event involving Amazon GameLift resources (such as a fleet). In addition to tracking activity, event codes and messages can provide additional information for troubleshooting and debugging problems.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FleetAttributes.html"
+                                  title='struct rusoto_gamelift::FleetAttributes'>FleetAttributes</a></td>
+                           <td class='docblock-short'>
+                                <p>General properties describing a fleet.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FleetCapacity.html"
+                                  title='struct rusoto_gamelift::FleetCapacity'>FleetCapacity</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about the fleet's capacity. Fleet capacity is measured in EC2 instances. By default, new fleets have a capacity of one instance, but can be updated as needed. The maximum number of instances for a fleet is determined by the fleet's instance type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FleetUtilization.html"
+                                  title='struct rusoto_gamelift::FleetUtilization'>FleetUtilization</a></td>
+                           <td class='docblock-short'>
+                                <p>Current status of fleet utilization, including the number of game and player sessions being hosted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameLiftClient.html"
+                                  title='struct rusoto_gamelift::GameLiftClient'>GameLiftClient</a></td>
+                           <td class='docblock-short'>
+                                <p>A client for the Amazon GameLift API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameProperty.html"
+                                  title='struct rusoto_gamelift::GameProperty'>GameProperty</a></td>
+                           <td class='docblock-short'>
+                                <p>Set of key-value pairs containing information a server process requires to set up a game session. This object allows you to pass in any set of data needed for your game. For more information, see the <a href="http://docs.aws.amazon.com/gamelift/latest/developerguide/">Amazon GameLift Developer Guide</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameSession.html"
+                                  title='struct rusoto_gamelift::GameSession'>GameSession</a></td>
+                           <td class='docblock-short'>
+                                <p>Properties describing a game session.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameSessionDetail.html"
+                                  title='struct rusoto_gamelift::GameSessionDetail'>GameSessionDetail</a></td>
+                           <td class='docblock-short'>
+                                <p>A game session's properties plus the protection policy currently in force.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameSessionPlacement.html"
+                                  title='struct rusoto_gamelift::GameSessionPlacement'>GameSessionPlacement</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Object that describes a <a>StartGameSessionPlacement</a> request. This object includes the full details of the original request plus the current status and start/end time stamps.</p> <p>Game session placement-related operations include:</p> <ul> <li> <p> <a>StartGameSessionPlacement</a> </p> </li> <li> <p> <a>DescribeGameSessionPlacement</a> </p> </li> <li> <p> <a>StopGameSessionPlacement</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameSessionQueue.html"
+                                  title='struct rusoto_gamelift::GameSessionQueue'>GameSessionQueue</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Configuration of a queue that is used to process game session placement requests. The queue configuration identifies several game features:</p> <ul> <li> <p>The destinations where a new game session can potentially be hosted. Amazon GameLift tries these destinations in an order based on either the queue&#39;s default order or player latency information, if provided in a placement request. With latency information, Amazon GameLift can place game sessions where the majority of players are reporting the lowest possible latency. </p> </li> <li> <p>The length of time that placement requests can wait in the queue before timing out. </p> </li> <li> <p>A set of optional latency policies that protect individual players from high latencies, preventing game sessions from being placed where any individual player is reporting latency higher than a policy&#39;s maximum.</p> </li> </ul> <p>Queue-related operations include the following:</p> <ul> <li> <p> <a>CreateGameSessionQueue</a> </p> </li> <li> <p> <a>DescribeGameSessionQueues</a> </p> </li> <li> <p> <a>UpdateGameSessionQueue</a> </p> </li> <li> <p> <a>DeleteGameSessionQueue</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GameSessionQueueDestination.html"
+                                  title='struct rusoto_gamelift::GameSessionQueueDestination'>GameSessionQueueDestination</a></td>
+                           <td class='docblock-short'>
+                                <p>Fleet designated in a game session queue. Requests for new game sessions in the queue are fulfilled by starting a new game session on any destination configured for a queue. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetGameSessionLogUrlInput.html"
+                                  title='struct rusoto_gamelift::GetGameSessionLogUrlInput'>GetGameSessionLogUrlInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetGameSessionLogUrlOutput.html"
+                                  title='struct rusoto_gamelift::GetGameSessionLogUrlOutput'>GetGameSessionLogUrlOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetInstanceAccessInput.html"
+                                  title='struct rusoto_gamelift::GetInstanceAccessInput'>GetInstanceAccessInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.GetInstanceAccessOutput.html"
+                                  title='struct rusoto_gamelift::GetInstanceAccessOutput'>GetInstanceAccessOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Instance.html"
+                                  title='struct rusoto_gamelift::Instance'>Instance</a></td>
+                           <td class='docblock-short'>
+                                <p>Properties that describe an instance of a virtual computing resource that hosts one or more game servers. A fleet contains zero or more instances.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.InstanceAccess.html"
+                                  title='struct rusoto_gamelift::InstanceAccess'>InstanceAccess</a></td>
+                           <td class='docblock-short'>
+                                <p>Information required to remotely connect to a fleet instance. Access is requested by calling <a>GetInstanceAccess</a>. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.InstanceCredentials.html"
+                                  title='struct rusoto_gamelift::InstanceCredentials'>InstanceCredentials</a></td>
+                           <td class='docblock-short'>
+                                <p>Set of credentials required to remotely access a fleet instance. Access credentials are requested by calling <a>GetInstanceAccess</a> and returned in an <a>InstanceAccess</a> object.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.IpPermission.html"
+                                  title='struct rusoto_gamelift::IpPermission'>IpPermission</a></td>
+                           <td class='docblock-short'>
+                                <p>A range of IP addresses and port settings that allow inbound traffic to connect to server processes on Amazon GameLift. Each game session hosted on a fleet is assigned a unique combination of IP address and port number, which must fall into the fleet's allowed ranges. This combination is included in the <a>GameSession</a> object. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListAliasesInput.html"
+                                  title='struct rusoto_gamelift::ListAliasesInput'>ListAliasesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListAliasesOutput.html"
+                                  title='struct rusoto_gamelift::ListAliasesOutput'>ListAliasesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListBuildsInput.html"
+                                  title='struct rusoto_gamelift::ListBuildsInput'>ListBuildsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListBuildsOutput.html"
+                                  title='struct rusoto_gamelift::ListBuildsOutput'>ListBuildsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListFleetsInput.html"
+                                  title='struct rusoto_gamelift::ListFleetsInput'>ListFleetsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ListFleetsOutput.html"
+                                  title='struct rusoto_gamelift::ListFleetsOutput'>ListFleetsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PlacedPlayerSession.html"
+                                  title='struct rusoto_gamelift::PlacedPlayerSession'>PlacedPlayerSession</a></td>
+                           <td class='docblock-short'>
+                                <p>Information about a player session that was created as part of a <a>StartGameSessionPlacement</a> request. This object contains only the player ID and player session ID. To retrieve full details on a player session, call <a>DescribePlayerSessions</a> with the player session ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PlayerLatency.html"
+                                  title='struct rusoto_gamelift::PlayerLatency'>PlayerLatency</a></td>
+                           <td class='docblock-short'>
+                                <p>Regional latency information for a player, used when requesting a new game session with <a>StartGameSessionPlacement</a>. This value indicates the amount of time lag that exists when the player is connected to a fleet in the specified region. The relative difference between a player's latency values for multiple regions are used to determine which fleets are best suited to place a new game session for the player. </p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PlayerLatencyPolicy.html"
+                                  title='struct rusoto_gamelift::PlayerLatencyPolicy'>PlayerLatencyPolicy</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Queue setting that determines the highest latency allowed for individual players when placing a game session. When a latency policy is in force, a game session cannot be placed at any destination in a region where a player is reporting latency higher than the cap. Latency policies are only enforced when the placement request contains player latency information.</p> <p>Latency policy-related operations include:</p> <ul> <li> <p> <a>CreateGameSessionQueue</a> </p> </li> <li> <p> <a>UpdateGameSessionQueue</a> </p> </li> <li> <p> <a>StartGameSessionPlacement</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PlayerSession.html"
+                                  title='struct rusoto_gamelift::PlayerSession'>PlayerSession</a></td>
+                           <td class='docblock-short'>
+                                <p><p>Properties describing a player session. A player session represents either a player reservation for a game session or actual player activity in a game session. A player session object (including player data) is automatically passed to a game session when the player connects to the game session and is validated.</p> <p>Player session-related operations include:</p> <ul> <li> <p> <a>CreatePlayerSession</a> </p> </li> <li> <p> <a>CreatePlayerSessions</a> </p> </li> <li> <p> <a>DescribePlayerSessions</a> </p> </li> </ul></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutScalingPolicyInput.html"
+                                  title='struct rusoto_gamelift::PutScalingPolicyInput'>PutScalingPolicyInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PutScalingPolicyOutput.html"
+                                  title='struct rusoto_gamelift::PutScalingPolicyOutput'>PutScalingPolicyOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RequestUploadCredentialsInput.html"
+                                  title='struct rusoto_gamelift::RequestUploadCredentialsInput'>RequestUploadCredentialsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RequestUploadCredentialsOutput.html"
+                                  title='struct rusoto_gamelift::RequestUploadCredentialsOutput'>RequestUploadCredentialsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ResolveAliasInput.html"
+                                  title='struct rusoto_gamelift::ResolveAliasInput'>ResolveAliasInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ResolveAliasOutput.html"
+                                  title='struct rusoto_gamelift::ResolveAliasOutput'>ResolveAliasOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ResourceCreationLimitPolicy.html"
+                                  title='struct rusoto_gamelift::ResourceCreationLimitPolicy'>ResourceCreationLimitPolicy</a></td>
+                           <td class='docblock-short'>
+                                <p>Policy that limits the number of game sessions a player can create on the same fleet. This optional policy gives game owners control over how players can consume available game server resources. A resource creation policy makes the following statement: "An individual player can create a maximum number of new game sessions within a specified time period".</p> <p>The policy is evaluated when a player tries to create a new game session. For example, with a policy of 10 new game sessions and a time period of 60 minutes, on receiving a <code>CreateGameSession</code> request, Amazon GameLift checks that the player (identified by <code>CreatorId</code>) has created fewer than 10 game sessions in the past 60 minutes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RoutingStrategy.html"
+                                  title='struct rusoto_gamelift::RoutingStrategy'>RoutingStrategy</a></td>
+                           <td class='docblock-short'>
+                                <p>Routing configuration for a fleet alias.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RuntimeConfiguration.html"
+                                  title='struct rusoto_gamelift::RuntimeConfiguration'>RuntimeConfiguration</a></td>
+                           <td class='docblock-short'>
+                                <p>Collection of server process configurations that describe what processes should be run on each instance in a fleet. An instance can launch and maintain multiple server processes based on the runtime configuration; it regularly checks for an updated runtime configuration and starts new server processes to match the latest version.</p> <p>The key purpose of a runtime configuration with multiple server process configurations is to be able to run more than one kind of game server in a single fleet. You can include configurations for more than one server executable in order to run two or more different programs to run on the same instance. This option might be useful, for example, to run more than one version of your game server on the same fleet. Another option is to specify configurations for the same server executable but with different launch parameters.</p> <p>A Amazon GameLift instance is limited to 50 processes running simultaneously. To calculate the total number of processes specified in a runtime configuration, add the values of the <code>ConcurrentExecutions</code> parameter for each <code> <a>ServerProcess</a> </code> object in the runtime configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.S3Location.html"
+                                  title='struct rusoto_gamelift::S3Location'>S3Location</a></td>
+                           <td class='docblock-short'>
+                                <p>Location in Amazon Simple Storage Service (Amazon S3) where build files can be stored for access by Amazon GameLift. This location is specified in a <a>CreateBuild</a> request. For more details, see the <a href="http://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-cli-uploading.html#gamelift-build-cli-uploading-create-build">Create a Build with Files in Amazon S3</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ScalingPolicy.html"
+                                  title='struct rusoto_gamelift::ScalingPolicy'>ScalingPolicy</a></td>
+                           <td class='docblock-short'>
+                                <p>Rule that controls how a fleet is scaled. Scaling policies are uniquely identified by the combination of name and fleet ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.SearchGameSessionsInput.html"
+                                  title='struct rusoto_gamelift::SearchGameSessionsInput'>SearchGameSessionsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.SearchGameSessionsOutput.html"
+                                  title='struct rusoto_gamelift::SearchGameSessionsOutput'>SearchGameSessionsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ServerProcess.html"
+                                  title='struct rusoto_gamelift::ServerProcess'>ServerProcess</a></td>
+                           <td class='docblock-short'>
+                                <p>A set of instructions for launching server processes on each instance in a fleet. Each instruction set identifies the location of the server executable, optional launch parameters, and the number of server processes with this configuration to maintain concurrently on the instance. Server process configurations make up a fleet's <code> <a>RuntimeConfiguration</a> </code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StartGameSessionPlacementInput.html"
+                                  title='struct rusoto_gamelift::StartGameSessionPlacementInput'>StartGameSessionPlacementInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StartGameSessionPlacementOutput.html"
+                                  title='struct rusoto_gamelift::StartGameSessionPlacementOutput'>StartGameSessionPlacementOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StopGameSessionPlacementInput.html"
+                                  title='struct rusoto_gamelift::StopGameSessionPlacementInput'>StopGameSessionPlacementInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.StopGameSessionPlacementOutput.html"
+                                  title='struct rusoto_gamelift::StopGameSessionPlacementOutput'>StopGameSessionPlacementOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateAliasInput.html"
+                                  title='struct rusoto_gamelift::UpdateAliasInput'>UpdateAliasInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateAliasOutput.html"
+                                  title='struct rusoto_gamelift::UpdateAliasOutput'>UpdateAliasOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateBuildInput.html"
+                                  title='struct rusoto_gamelift::UpdateBuildInput'>UpdateBuildInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateBuildOutput.html"
+                                  title='struct rusoto_gamelift::UpdateBuildOutput'>UpdateBuildOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateFleetAttributesInput.html"
+                                  title='struct rusoto_gamelift::UpdateFleetAttributesInput'>UpdateFleetAttributesInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateFleetAttributesOutput.html"
+                                  title='struct rusoto_gamelift::UpdateFleetAttributesOutput'>UpdateFleetAttributesOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateFleetCapacityInput.html"
+                                  title='struct rusoto_gamelift::UpdateFleetCapacityInput'>UpdateFleetCapacityInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateFleetCapacityOutput.html"
+                                  title='struct rusoto_gamelift::UpdateFleetCapacityOutput'>UpdateFleetCapacityOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateFleetPortSettingsInput.html"
+                                  title='struct rusoto_gamelift::UpdateFleetPortSettingsInput'>UpdateFleetPortSettingsInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateFleetPortSettingsOutput.html"
+                                  title='struct rusoto_gamelift::UpdateFleetPortSettingsOutput'>UpdateFleetPortSettingsOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateGameSessionInput.html"
+                                  title='struct rusoto_gamelift::UpdateGameSessionInput'>UpdateGameSessionInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateGameSessionOutput.html"
+                                  title='struct rusoto_gamelift::UpdateGameSessionOutput'>UpdateGameSessionOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateGameSessionQueueInput.html"
+                                  title='struct rusoto_gamelift::UpdateGameSessionQueueInput'>UpdateGameSessionQueueInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateGameSessionQueueOutput.html"
+                                  title='struct rusoto_gamelift::UpdateGameSessionQueueOutput'>UpdateGameSessionQueueOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateRuntimeConfigurationInput.html"
+                                  title='struct rusoto_gamelift::UpdateRuntimeConfigurationInput'>UpdateRuntimeConfigurationInput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the input for a request action.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UpdateRuntimeConfigurationOutput.html"
+                                  title='struct rusoto_gamelift::UpdateRuntimeConfigurationOutput'>UpdateRuntimeConfigurationOutput</a></td>
+                           <td class='docblock-short'>
+                                <p>Represents the returned data in response to a request action.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateAliasError.html"
+                                  title='enum rusoto_gamelift::CreateAliasError'>CreateAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateBuildError.html"
+                                  title='enum rusoto_gamelift::CreateBuildError'>CreateBuildError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateBuild</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateFleetError.html"
+                                  title='enum rusoto_gamelift::CreateFleetError'>CreateFleetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateFleet</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateGameSessionError.html"
+                                  title='enum rusoto_gamelift::CreateGameSessionError'>CreateGameSessionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateGameSession</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreateGameSessionQueueError.html"
+                                  title='enum rusoto_gamelift::CreateGameSessionQueueError'>CreateGameSessionQueueError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreateGameSessionQueue</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreatePlayerSessionError.html"
+                                  title='enum rusoto_gamelift::CreatePlayerSessionError'>CreatePlayerSessionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreatePlayerSession</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.CreatePlayerSessionsError.html"
+                                  title='enum rusoto_gamelift::CreatePlayerSessionsError'>CreatePlayerSessionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by CreatePlayerSessions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteAliasError.html"
+                                  title='enum rusoto_gamelift::DeleteAliasError'>DeleteAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteBuildError.html"
+                                  title='enum rusoto_gamelift::DeleteBuildError'>DeleteBuildError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteBuild</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteFleetError.html"
+                                  title='enum rusoto_gamelift::DeleteFleetError'>DeleteFleetError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteFleet</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteGameSessionQueueError.html"
+                                  title='enum rusoto_gamelift::DeleteGameSessionQueueError'>DeleteGameSessionQueueError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteGameSessionQueue</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DeleteScalingPolicyError.html"
+                                  title='enum rusoto_gamelift::DeleteScalingPolicyError'>DeleteScalingPolicyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DeleteScalingPolicy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeAliasError.html"
+                                  title='enum rusoto_gamelift::DescribeAliasError'>DescribeAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeBuildError.html"
+                                  title='enum rusoto_gamelift::DescribeBuildError'>DescribeBuildError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeBuild</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeEC2InstanceLimitsError.html"
+                                  title='enum rusoto_gamelift::DescribeEC2InstanceLimitsError'>DescribeEC2InstanceLimitsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeEC2InstanceLimits</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeFleetAttributesError.html"
+                                  title='enum rusoto_gamelift::DescribeFleetAttributesError'>DescribeFleetAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeFleetAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeFleetCapacityError.html"
+                                  title='enum rusoto_gamelift::DescribeFleetCapacityError'>DescribeFleetCapacityError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeFleetCapacity</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeFleetEventsError.html"
+                                  title='enum rusoto_gamelift::DescribeFleetEventsError'>DescribeFleetEventsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeFleetEvents</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeFleetPortSettingsError.html"
+                                  title='enum rusoto_gamelift::DescribeFleetPortSettingsError'>DescribeFleetPortSettingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeFleetPortSettings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeFleetUtilizationError.html"
+                                  title='enum rusoto_gamelift::DescribeFleetUtilizationError'>DescribeFleetUtilizationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeFleetUtilization</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeGameSessionDetailsError.html"
+                                  title='enum rusoto_gamelift::DescribeGameSessionDetailsError'>DescribeGameSessionDetailsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeGameSessionDetails</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeGameSessionPlacementError.html"
+                                  title='enum rusoto_gamelift::DescribeGameSessionPlacementError'>DescribeGameSessionPlacementError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeGameSessionPlacement</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeGameSessionQueuesError.html"
+                                  title='enum rusoto_gamelift::DescribeGameSessionQueuesError'>DescribeGameSessionQueuesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeGameSessionQueues</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeGameSessionsError.html"
+                                  title='enum rusoto_gamelift::DescribeGameSessionsError'>DescribeGameSessionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeGameSessions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeInstancesError.html"
+                                  title='enum rusoto_gamelift::DescribeInstancesError'>DescribeInstancesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeInstances</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribePlayerSessionsError.html"
+                                  title='enum rusoto_gamelift::DescribePlayerSessionsError'>DescribePlayerSessionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribePlayerSessions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeRuntimeConfigurationError.html"
+                                  title='enum rusoto_gamelift::DescribeRuntimeConfigurationError'>DescribeRuntimeConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeRuntimeConfiguration</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.DescribeScalingPoliciesError.html"
+                                  title='enum rusoto_gamelift::DescribeScalingPoliciesError'>DescribeScalingPoliciesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by DescribeScalingPolicies</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetGameSessionLogUrlError.html"
+                                  title='enum rusoto_gamelift::GetGameSessionLogUrlError'>GetGameSessionLogUrlError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetGameSessionLogUrl</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.GetInstanceAccessError.html"
+                                  title='enum rusoto_gamelift::GetInstanceAccessError'>GetInstanceAccessError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by GetInstanceAccess</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListAliasesError.html"
+                                  title='enum rusoto_gamelift::ListAliasesError'>ListAliasesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListAliases</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListBuildsError.html"
+                                  title='enum rusoto_gamelift::ListBuildsError'>ListBuildsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListBuilds</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ListFleetsError.html"
+                                  title='enum rusoto_gamelift::ListFleetsError'>ListFleetsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ListFleets</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.PutScalingPolicyError.html"
+                                  title='enum rusoto_gamelift::PutScalingPolicyError'>PutScalingPolicyError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by PutScalingPolicy</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.RequestUploadCredentialsError.html"
+                                  title='enum rusoto_gamelift::RequestUploadCredentialsError'>RequestUploadCredentialsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by RequestUploadCredentials</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.ResolveAliasError.html"
+                                  title='enum rusoto_gamelift::ResolveAliasError'>ResolveAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by ResolveAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.SearchGameSessionsError.html"
+                                  title='enum rusoto_gamelift::SearchGameSessionsError'>SearchGameSessionsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by SearchGameSessions</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.StartGameSessionPlacementError.html"
+                                  title='enum rusoto_gamelift::StartGameSessionPlacementError'>StartGameSessionPlacementError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by StartGameSessionPlacement</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.StopGameSessionPlacementError.html"
+                                  title='enum rusoto_gamelift::StopGameSessionPlacementError'>StopGameSessionPlacementError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by StopGameSessionPlacement</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateAliasError.html"
+                                  title='enum rusoto_gamelift::UpdateAliasError'>UpdateAliasError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateAlias</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateBuildError.html"
+                                  title='enum rusoto_gamelift::UpdateBuildError'>UpdateBuildError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateBuild</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateFleetAttributesError.html"
+                                  title='enum rusoto_gamelift::UpdateFleetAttributesError'>UpdateFleetAttributesError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateFleetAttributes</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateFleetCapacityError.html"
+                                  title='enum rusoto_gamelift::UpdateFleetCapacityError'>UpdateFleetCapacityError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateFleetCapacity</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateFleetPortSettingsError.html"
+                                  title='enum rusoto_gamelift::UpdateFleetPortSettingsError'>UpdateFleetPortSettingsError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateFleetPortSettings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateGameSessionError.html"
+                                  title='enum rusoto_gamelift::UpdateGameSessionError'>UpdateGameSessionError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateGameSession</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateGameSessionQueueError.html"
+                                  title='enum rusoto_gamelift::UpdateGameSessionQueueError'>UpdateGameSessionQueueError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateGameSessionQueue</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.UpdateRuntimeConfigurationError.html"
+                                  title='enum rusoto_gamelift::UpdateRuntimeConfigurationError'>UpdateRuntimeConfigurationError</a></td>
+                           <td class='docblock-short'>
+                                <p>Errors returned by UpdateRuntimeConfiguration</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="trait" href="trait.GameLift.html"
+                                  title='trait rusoto_gamelift::GameLift'>GameLift</a></td>
+                           <td class='docblock-short'>
+                                <p>Trait representing the capabilities of the Amazon GameLift API. Amazon GameLift clients implement this trait.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AliasId.html"
+                                  title='type rusoto_gamelift::AliasId'>AliasId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.AliasList.html"
+                                  title='type rusoto_gamelift::AliasList'>AliasList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ArnStringModel.html"
+                                  title='type rusoto_gamelift::ArnStringModel'>ArnStringModel</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.BuildId.html"
+                                  title='type rusoto_gamelift::BuildId'>BuildId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.BuildList.html"
+                                  title='type rusoto_gamelift::BuildList'>BuildList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.BuildStatus.html"
+                                  title='type rusoto_gamelift::BuildStatus'>BuildStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ComparisonOperatorType.html"
+                                  title='type rusoto_gamelift::ComparisonOperatorType'>ComparisonOperatorType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.DesiredPlayerSessionList.html"
+                                  title='type rusoto_gamelift::DesiredPlayerSessionList'>DesiredPlayerSessionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Double.html"
+                                  title='type rusoto_gamelift::Double'>Double</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EC2InstanceLimitList.html"
+                                  title='type rusoto_gamelift::EC2InstanceLimitList'>EC2InstanceLimitList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EC2InstanceType.html"
+                                  title='type rusoto_gamelift::EC2InstanceType'>EC2InstanceType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventCode.html"
+                                  title='type rusoto_gamelift::EventCode'>EventCode</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.EventList.html"
+                                  title='type rusoto_gamelift::EventList'>EventList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FleetAttributesList.html"
+                                  title='type rusoto_gamelift::FleetAttributesList'>FleetAttributesList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FleetCapacityList.html"
+                                  title='type rusoto_gamelift::FleetCapacityList'>FleetCapacityList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FleetId.html"
+                                  title='type rusoto_gamelift::FleetId'>FleetId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FleetIdList.html"
+                                  title='type rusoto_gamelift::FleetIdList'>FleetIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FleetStatus.html"
+                                  title='type rusoto_gamelift::FleetStatus'>FleetStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FleetUtilizationList.html"
+                                  title='type rusoto_gamelift::FleetUtilizationList'>FleetUtilizationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Float.html"
+                                  title='type rusoto_gamelift::Float'>Float</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.FreeText.html"
+                                  title='type rusoto_gamelift::FreeText'>FreeText</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GamePropertyKey.html"
+                                  title='type rusoto_gamelift::GamePropertyKey'>GamePropertyKey</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GamePropertyList.html"
+                                  title='type rusoto_gamelift::GamePropertyList'>GamePropertyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GamePropertyValue.html"
+                                  title='type rusoto_gamelift::GamePropertyValue'>GamePropertyValue</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionActivationTimeoutSeconds.html"
+                                  title='type rusoto_gamelift::GameSessionActivationTimeoutSeconds'>GameSessionActivationTimeoutSeconds</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionDetailList.html"
+                                  title='type rusoto_gamelift::GameSessionDetailList'>GameSessionDetailList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionList.html"
+                                  title='type rusoto_gamelift::GameSessionList'>GameSessionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionPlacementState.html"
+                                  title='type rusoto_gamelift::GameSessionPlacementState'>GameSessionPlacementState</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionQueueDestinationList.html"
+                                  title='type rusoto_gamelift::GameSessionQueueDestinationList'>GameSessionQueueDestinationList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionQueueList.html"
+                                  title='type rusoto_gamelift::GameSessionQueueList'>GameSessionQueueList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionQueueName.html"
+                                  title='type rusoto_gamelift::GameSessionQueueName'>GameSessionQueueName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionQueueNameList.html"
+                                  title='type rusoto_gamelift::GameSessionQueueNameList'>GameSessionQueueNameList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.GameSessionStatus.html"
+                                  title='type rusoto_gamelift::GameSessionStatus'>GameSessionStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.IdStringModel.html"
+                                  title='type rusoto_gamelift::IdStringModel'>IdStringModel</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.InstanceId.html"
+                                  title='type rusoto_gamelift::InstanceId'>InstanceId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.InstanceList.html"
+                                  title='type rusoto_gamelift::InstanceList'>InstanceList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.InstanceStatus.html"
+                                  title='type rusoto_gamelift::InstanceStatus'>InstanceStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Integer.html"
+                                  title='type rusoto_gamelift::Integer'>Integer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.IpAddress.html"
+                                  title='type rusoto_gamelift::IpAddress'>IpAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.IpPermissionsList.html"
+                                  title='type rusoto_gamelift::IpPermissionsList'>IpPermissionsList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.IpProtocol.html"
+                                  title='type rusoto_gamelift::IpProtocol'>IpProtocol</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MaxConcurrentGameSessionActivations.html"
+                                  title='type rusoto_gamelift::MaxConcurrentGameSessionActivations'>MaxConcurrentGameSessionActivations</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MetricGroup.html"
+                                  title='type rusoto_gamelift::MetricGroup'>MetricGroup</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MetricGroupList.html"
+                                  title='type rusoto_gamelift::MetricGroupList'>MetricGroupList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MetricName.html"
+                                  title='type rusoto_gamelift::MetricName'>MetricName</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NonBlankAndLengthConstraintString.html"
+                                  title='type rusoto_gamelift::NonBlankAndLengthConstraintString'>NonBlankAndLengthConstraintString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NonBlankString.html"
+                                  title='type rusoto_gamelift::NonBlankString'>NonBlankString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NonEmptyString.html"
+                                  title='type rusoto_gamelift::NonEmptyString'>NonEmptyString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.NonZeroAndMaxString.html"
+                                  title='type rusoto_gamelift::NonZeroAndMaxString'>NonZeroAndMaxString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.OperatingSystem.html"
+                                  title='type rusoto_gamelift::OperatingSystem'>OperatingSystem</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlacedPlayerSessionList.html"
+                                  title='type rusoto_gamelift::PlacedPlayerSessionList'>PlacedPlayerSessionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerData.html"
+                                  title='type rusoto_gamelift::PlayerData'>PlayerData</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerDataMap.html"
+                                  title='type rusoto_gamelift::PlayerDataMap'>PlayerDataMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerIdList.html"
+                                  title='type rusoto_gamelift::PlayerIdList'>PlayerIdList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerLatencyList.html"
+                                  title='type rusoto_gamelift::PlayerLatencyList'>PlayerLatencyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerLatencyPolicyList.html"
+                                  title='type rusoto_gamelift::PlayerLatencyPolicyList'>PlayerLatencyPolicyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerSessionCreationPolicy.html"
+                                  title='type rusoto_gamelift::PlayerSessionCreationPolicy'>PlayerSessionCreationPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerSessionId.html"
+                                  title='type rusoto_gamelift::PlayerSessionId'>PlayerSessionId</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerSessionList.html"
+                                  title='type rusoto_gamelift::PlayerSessionList'>PlayerSessionList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PlayerSessionStatus.html"
+                                  title='type rusoto_gamelift::PlayerSessionStatus'>PlayerSessionStatus</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PortNumber.html"
+                                  title='type rusoto_gamelift::PortNumber'>PortNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PositiveInteger.html"
+                                  title='type rusoto_gamelift::PositiveInteger'>PositiveInteger</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.PositiveLong.html"
+                                  title='type rusoto_gamelift::PositiveLong'>PositiveLong</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ProtectionPolicy.html"
+                                  title='type rusoto_gamelift::ProtectionPolicy'>ProtectionPolicy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.RoutingStrategyType.html"
+                                  title='type rusoto_gamelift::RoutingStrategyType'>RoutingStrategyType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ScalingAdjustmentType.html"
+                                  title='type rusoto_gamelift::ScalingAdjustmentType'>ScalingAdjustmentType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ScalingPolicyList.html"
+                                  title='type rusoto_gamelift::ScalingPolicyList'>ScalingPolicyList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ScalingStatusType.html"
+                                  title='type rusoto_gamelift::ScalingStatusType'>ScalingStatusType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ServerProcessList.html"
+                                  title='type rusoto_gamelift::ServerProcessList'>ServerProcessList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.StringList.html"
+                                  title='type rusoto_gamelift::StringList'>StringList</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Timestamp.html"
+                                  title='type rusoto_gamelift::Timestamp'>Timestamp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.WholeNumber.html"
+                                  title='type rusoto_gamelift::WholeNumber'>WholeNumber</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "rusoto_gamelift";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
